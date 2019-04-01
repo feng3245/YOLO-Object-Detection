@@ -232,7 +232,7 @@ class Darknet(nn.Module):
             
             percent_comp = (counter / len(self.blocks)) * 100
 
-            print('Loading weights. Please Wait...{:.2f}% Complete'.format(percent_comp), end = '\r', flush = True)
+            print('Loading weights. Please Wait...{:.2f}% Complete'.format(percent_comp))
 
             counter += 1
 

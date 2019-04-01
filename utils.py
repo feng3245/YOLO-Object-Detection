@@ -204,10 +204,10 @@ def plot_boxes(img, boxes, class_names, plot_labels, color = None):
         
         # Get the (x,y) pixel coordinates of the lower-left and lower-right corners
         # of the bounding box relative to the size of the image. 
-        x1 = int(np.around((box[0] - box[2]/2.0) * width))
-        y1 = int(np.around((box[1] - box[3]/2.0) * height))
-        x2 = int(np.around((box[0] + box[2]/2.0) * width))
-        y2 = int(np.around((box[1] + box[3]/2.0) * height))
+        x1 = int(round((box[0] - box[2]/2.0) * width))
+        y1 = int(round((box[1] - box[3]/2.0) * height))
+        x2 = int(round((box[0] + box[2]/2.0) * width))
+        y2 = int(round((box[1] + box[3]/2.0) * height))
         
         # Set the default rgb value to red
         rgb = (1, 0, 0)
